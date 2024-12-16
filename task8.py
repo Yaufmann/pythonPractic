@@ -2,7 +2,7 @@ n = int(input('Введите число: '))
 
 def functionNum(n):
 
-   if n >= 9:
+   if n > 9:
       return print('Число больше 9') 
 
    number = ''  
@@ -16,7 +16,7 @@ def functionNum(n):
       for i in numberList:
          if i != 9:
             numberList.remove(i)
-            numberList.insert(int(i)-1,9)   
+            numberList.insert(int(i)-1,n)   
       
       convertedList = map(str,numberList)
       result = ''.join(convertedList)
