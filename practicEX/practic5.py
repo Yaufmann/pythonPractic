@@ -2,6 +2,7 @@ def searchLetter(string):
 
    arr = string.split(' ')
    count = 0
+   
    for element in range(0,len(arr)):
       
       if arr[element][0] == 'е':
@@ -9,5 +10,4 @@ def searchLetter(string):
    
    return print(f'Количество слов начинающихся с буквы - е: {count}')
 
-
-searchLetter('Строка со словом екид и словом ехон!')
+searchLetter('Строка ео еловом екид е словом ехон!')
