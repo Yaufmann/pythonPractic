@@ -4,13 +4,14 @@ twoArr = []
 threeArr = []
 
 for i in range(3):
+   print(i)
    length = int(input('Введите длину массива до 15 включительно: '))
    arr = [int(input('Введите целое число: ')) for i in range(length)]
-   if i == 1:
+   if i == 0:
       oneArr = arr
-   elif i == 2:
+   if i == 1:
       twoArr = arr
-   else:
+   if i == 2:
       threeArr = arr   
 
 def summThreeArr(arr1,arr2,arr3):
@@ -30,20 +31,20 @@ def summThreeArr(arr1,arr2,arr3):
    for i in range(len(summArray)):
       
       if i == 0:
-         for i in range(len(summArray[i])):   
-            summArr1 += summArray[0][i]
+         for j in range(len(summArray[i])):   
+            summArr1 += summArray[0][j]
          
          avgSumm1 = summArr1 / len(summArray[i])
          
       if i == 1:
-         for i in range(len(summArray[i])):   
-            summArr2 += summArray[1][i]
+         for j in range(len(summArray[i])):   
+            summArr2 += summArray[1][j]
 
          avgSumm2 = summArr2 / len(summArray[i])
          
       if i == 2:
-         for i in range(len(summArray[i])):   
-            summArr3 += summArray[2][i]
+         for j in range(len(summArray[i])):
+            summArr3 += summArray[2][j]
 
          avgSumm3 = summArr3 / len(summArray[i])
 
