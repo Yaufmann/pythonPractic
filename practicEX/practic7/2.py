@@ -4,7 +4,6 @@ twoArr = []
 threeArr = []
 
 for i in range(3):
-   print(i)
    length = int(input('Введите длину массива до 15 включительно: '))
    arr = [int(input('Введите целое число: ')) for i in range(length)]
    if i == 0:
