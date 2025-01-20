@@ -9,12 +9,12 @@ for i in range(A):
     C.append(D)
 
 print(type(C[i]))
-
+print(max(C[0]))
 for i in range(A):
     maxElementString = max(C[i])
     minElementString = min(C[i])
 
-    for i in range(B):
+    for j in range(B):
         if C[i][j] == C[i][0]:
             index = C[i].index(maxElementString)
             #C[i].insert(index,C[i][0])
